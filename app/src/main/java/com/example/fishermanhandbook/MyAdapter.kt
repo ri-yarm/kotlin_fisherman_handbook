@@ -45,4 +45,11 @@ class MyAdapter (listArray: ArrayList<ListItem>, context: Context): RecyclerView
 
         holder.bind(listItem, contextRecycler)
     }
+
+    fun updateAdapter(listArray: List<ListItem>) {
+        listArrayRecycler.clear()
+
+        listArrayRecycler.addAll(listArray)
+        notifyDataSetChanged()
+    }
 }

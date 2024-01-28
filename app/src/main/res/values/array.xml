@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fish">
+        <item>Сом</item>
+        <item>Налим</item>
+        <item>щука</item>
+        <item>Карась</item>
+    </string-array>
+
+    <string-array name="fish_desc">
+        <item>fd</item>
+        <item>dfdfdfdf</item>
+        <item>hghh</item>
+        <item>ertertertre</item>
+    </string-array>
+
+    <array name="fish_image">
+        <item>@drawable/ic_snasti</item>
+        <item>@drawable/ic_snasti</item>
+        <item>@drawable/ic_snasti</item>
+        <item>@drawable/ic_snasti</item>
+    </array>
+
+    <string-array name="najivki">
+        <item>Червь</item>
+        <item>опарыш</item>
+    </string-array>
+
+    <string-array name="najivki_desc">
+        <item>Сам ты червь</item>
+        <item>Сам ты опарыш</item>
+    </string-array>
+
+    <array name="najivki_image">
+        <item>@drawable/ic_launcher_background</item>
+        <item>@drawable/ic_najivki</item>
+    </array>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_fish"
+            android:icon="@drawable/ic_fish"
+            android:title="@string/fish" />
+
+        <item
+            android:id="@+id/id_udochka"
+            android:icon="@drawable/ic_udochka"
+            android:title="@string/udochka" />
+
+        <item
+            android:id="@+id/id_najivki"
+            android:icon="@drawable/ic_najivki"
+            android:title="@string/najivki" />
+
+        <item
+            android:id="@+id/id_snasti"
+            android:icon="@drawable/ic_snasti"
+            android:title="@string/snasti" />
+    </group>
+
+    <item android:title="Category 2">
+        <menu>
+            <item
+                android:id="@+id/id_mini"
+                android:icon="@drawable/ic_najivki"
+                android:title="мини" />
+
+            <item
+                android:id="@+id/id_maxi"
+                android:icon="@drawable/ic_snasti"
+                android:title="макси" />
+        </menu>
+    </item>
+
+</menu>

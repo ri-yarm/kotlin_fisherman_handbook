@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fishermanhandbook.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
@@ -15,6 +17,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private var adapter: MyAdapter? = null
 
     private var list = ArrayList<ListItem>()
+    private var drawer: DrawerLayout? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +27,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val nav_view = binding.navView
         val rc_view = binding.test.rcView
+        drawer = binding.drawerLayout
 
         nav_view.setNavigationItemSelectedListener(this)
 
@@ -66,6 +71,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.id_snasti -> showCategoryToast(item)
         }
+
+        drawer?.closeDrawer(GravityCompat.START)
 
         return true
     }
